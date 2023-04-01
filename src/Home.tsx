@@ -14,16 +14,25 @@ const Home: React.FC<HomeProps> = ({ questions }) => {
     <div>
       <Header />
 
-      <h2>Recent Questions</h2>
-      {recentQuestions.map((question) => (
-        <Question
-          key={question.id}
-          id={question.id}
-          title={question.title}
-          description={question.description}
-        />
-      ))}
-
+      <div style={{ padding: "1rem" }}>
+        <h2>Recent Questions</h2>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "1rem",
+          }}
+        >
+          {recentQuestions.map((question) => (
+            <Question
+              key={question.id}
+              id={question.id}
+              title={question.title}
+              description={question.description}
+            />
+          ))}
+        </div>
+      </div>
       <Footer />
     </div>
   );

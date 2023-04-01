@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #19376d;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.Header-title {
+  text-align: left;
+}
+
+.Header-left {
+  flex: 1;
+}
+
+.Header-right {
+  margin-left: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #ffa500;
+  text-decoration: none;
+}

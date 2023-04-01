@@ -1,0 +1,28 @@
+.Answer {
+  background-color: #ffffff;
+  border: 1px solid #19376d;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Answer-text {
+  margin: 0;
+}
+
+.Answer-info {
+  display: flex;
+  /* manual fix: remove space-between */
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.Answer-author::after {
+  content: "-";
+  margin: 0 0.5rem;
+}
+
+.Answer-date {
+  font-style: italic;
+}

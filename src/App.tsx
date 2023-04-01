@@ -1,6 +1,5 @@
 import React from "react";
 // manual fix: remove Switch as it no longer exists
-
 import {
   Route,
   createRoutesFromElements,
@@ -13,16 +12,23 @@ import Home from "./Home";
 import NotFound from "./NotFound";
 import { questions } from "./questions";
 import QuestionPage from "./QuestionPage";
+import AskQuestion from "./AskQuestion";
 
+// manual fix: add AskQuestionPage
+// manual fix: change naming for ask question page
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home questions={questions} />} />
+      <Route
+        path="/"
+        element={<Home questions={questions} />}
+        errorElement={<NotFound />}
+      />
       <Route
         path="/question/:id"
         element={<QuestionPage questions={questions} />}
       />
-      <Route element={<NotFound />} />
+      <Route path="/ask" element={<AskQuestion onSubmit={() => null} />} />
     </>
   )
 );
