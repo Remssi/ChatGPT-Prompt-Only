@@ -61,7 +61,7 @@ Not yet
 
 Maybe some day,
 
-<iframe src="https://giphy.com/embed/zvPijis9AXQ7S" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/day-world-braveheart-zvPijis9AXQ7S">via GIPHY</a></p>
+<img alt="But it is not this day" src="https://media.giphy.com/media/zvPijis9AXQ7S/giphy.gif" />
 
 ## Prompt count
 
